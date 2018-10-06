@@ -69,53 +69,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-pychon程序" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/06/pychon程序/" class="article-date">
-  <time datetime="2018-10-06T13:18:50.000Z" itemprop="datePublished">2018-10-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/06/pychon程序/">pychon程序</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#！/usr/bin/env python3<br>import requests<br>import re<br>import json<br>query = input(‘请输入需要的关键词&gt;&gt;&gt;：’).strip()</p>
-<p>url=’<a href="https://s.taobao.com/search?q={}&amp;imgfile=&amp;commend=all&amp;ssid=s5-e&amp;search_type=item&amp;sourceId=tb.index&amp;spm=a21bo.2017.201856-taobao-item.1&amp;ie=utf8&amp;initiative_id=tbindexz_20170306&#39;.format(query)" target="_blank" rel="noopener">https://s.taobao.com/search?q={}&amp;imgfile=&amp;commend=all&amp;ssid=s5-e&amp;search_type=item&amp;sourceId=tb.index&amp;spm=a21bo.2017.201856-taobao-item.1&amp;ie=utf8&amp;initiative_id=tbindexz_20170306&#39;.format(query)</a><br>headers={<br>     ‘user-agent’: ‘ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36’<br>}</p>
-<h1 id="发送http请求"><a href="#发送http请求" class="headerlink" title="发送http请求"></a>发送http请求</h1><p>response = requests.get(url)<br>html = response.text  # 获取了数据</p>
-<p>#提取我们需要的数据   通过正则表达式( 多用 )<br>content = re.findall(r’g_page_config =(.<em>?)g_srp_loadCss’,html,re.S) [0] # 正则表达式 g_page_config 开始  中间有=(.</em>?)   g_srp_loadCss结尾</p>
-<h1 id="数据格式化-json-数据"><a href="#数据格式化-json-数据" class="headerlink" title="数据格式化  json 数据"></a>数据格式化  json 数据</h1><p>content = content.strip(‘ \n;’)     #   去掉多余的字符<br>print(content)<br>content = json.loads(content)    # 把json格式的字符串  转换成字典</p>
-<p>#数据结构的嵌套<br>data = content[‘mods’][‘itemlist’][‘data’][‘auctions’]  #  取出每一个商品</p>
-<p>#循环取出每一条数据</p>
-<p>#需要什么数据？</p>
-<h1 id="标题，标价，购买人数，是否包邮，是否天猫，地区，店名，url"><a href="#标题，标价，购买人数，是否包邮，是否天猫，地区，店名，url" class="headerlink" title="标题，标价，购买人数，是否包邮，是否天猫，地区，店名，url"></a>标题，标价，购买人数，是否包邮，是否天猫，地区，店名，url</h1><p>#写csv格式  文本格式<br>f = open(‘搜索{}的结果.CSV’.format(query),’w’,encoding=’utf-8’)</p>
-<p>#写标题<br>f.write(‘标题,标价,购买人数,是否包邮,是否天猫,地区,店名,url\n’)<br>for item  in data:<br>    temp = {<br>        ‘title’:item[‘title’],<br>        ‘view_price’:item[‘view_price’],<br>        ‘view_sales’: item[‘view_sales’],<br>        ‘view_fee’: ‘否’  if float(item[‘view_fee’]) else ‘是’,<br>        ‘isTmall’: ‘是’ if item[‘shopcard’][‘isTmall’] else ‘否’,<br>        ‘area’:item[‘item_loc’],<br>        ‘name’:item[‘nick’],<br>        ‘detal_url’:item[‘detail_url’]<br>    }<br>    f.write(‘{title},{view_price},{view_sales},{view_fee},{isTmall},{area},{name},{detal_url}\n’.format( ** temp))</p>
-<p>f.close()</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/06/pychon程序/" data-id="cjmxh2udw0000gctyx14w7tq8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-test-my-site" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/06/test-my-site/" class="article-date">
@@ -142,7 +95,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/06/test-my-site/" data-id="cjmxh2ugq0001gctyc25lbfg6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/06/test-my-site/" data-id="cjmxjbcne00006otys9xrv5fl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/06/hello-world/" data-id="cjmxh2ulg0002gcty9e5uvznc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/06/hello-world/" data-id="cjmxjbcs200016oty3zw2jk5i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -226,10 +179,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2018/10/06/pychon程序/">pychon程序</a>
-          </li>
         
           <li>
             <a href="/2018/10/06/test-my-site/">test_my_site</a>
