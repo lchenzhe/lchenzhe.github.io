@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="python,oldboy," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml /注意：有一个空格" title="追梦少年人" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Python安装windows1234561、下载安装包    https://www.python.org/downloads/2、安装    默认安装路径：C:\python353、配置环境变量    【右键计算机】--&amp;gt; 【属性】--&amp;gt; 【高级系统设置】--&amp;gt; 【高级】--&amp;gt; 【环境变量】--&amp;gt; 【在第二个内容框中找到 变量名为Path 的一行，双击】 --&amp;g">
+<meta name="keywords" content="python,oldboy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python学习第一周">
+<meta property="og:url" content="http://lchenzhe.github.io/2018/07/02/python学习第一周/index.html">
+<meta property="og:site_name" content="追梦少年人">
+<meta property="og:description" content="Python安装windows1234561、下载安装包    https://www.python.org/downloads/2、安装    默认安装路径：C:\python353、配置环境变量    【右键计算机】--&amp;gt; 【属性】--&amp;gt; 【高级系统设置】--&amp;gt; 【高级】--&amp;gt; 【环境变量】--&amp;gt; 【在第二个内容框中找到 变量名为Path 的一行，双击】 --&amp;g">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-19T06:17:33.851Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python学习第一周">
+<meta name="twitter:description" content="Python安装windows1234561、下载安装包    https://www.python.org/downloads/2、安装    默认安装路径：C:\python353、配置环境变量    【右键计算机】--&amp;gt; 【属性】--&amp;gt; 【高级系统设置】--&amp;gt; 【高级】--&amp;gt; 【环境变量】--&amp;gt; 【在第二个内容框中找到 变量名为Path 的一行，双击】 --&amp;g">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://lchenzhe.github.io/2018/07/02/python学习第一周/"/>
+
+
+
+
+
+  <title>python学习第一周 | 追梦少年人</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+<a href="https://github.com/lchenzhe " class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">追梦少年人</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">勿忘初心，方得始终</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home //首页"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user //关于"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags //标签"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th //分类"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive //归档"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photo">
+          <a href="/photo/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-photo //照片"></i> <br />
+            
+            photo
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://lchenzhe.github.io/2018/07/02/python学习第一周/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="嫽陈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/picture.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="追梦少年人">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python学习第一周</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-02T20:23:44+08:00">
+                2018-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h2><h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1、下载安装包</span><br><span class="line">    https://www.python.org/downloads/</span><br><span class="line">2、安装</span><br><span class="line">    默认安装路径：C:\python35</span><br><span class="line">3、配置环境变量</span><br><span class="line">    【右键计算机】--&gt; 【属性】--&gt; 【高级系统设置】--&gt; 【高级】--&gt; 【环境变量】--&gt; 【在第二个内容框中找到 变量名为Path 的一行，双击】 --&gt; 【Python安装目录追加到变值值中，用 ;分割】（python文件路径;script文件路径;）</span><br></pre></td></tr></table></figure>
+<h3 id="Linux-Mac"><a href="#Linux-Mac" class="headerlink" title="Linux/Mac"></a>Linux/Mac</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">无需安装，原装Python环境</span><br></pre></td></tr></table></figure>
+<h2 id="Hello-world程序"><a href="#Hello-world程序" class="headerlink" title="Hello world程序"></a>Hello world程序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello world!"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding:utf -8-*-</span></span><br><span class="line">name = <span class="string">"Jchen"</span></span><br><span class="line">上述代码声明了一个变量，变量名为:name，变量name的值为：<span class="string">"Jchen"</span></span><br><span class="line">变量定义的规则：</span><br><span class="line">①变量名只能是 字母、数字或下划线的任意组合</span><br><span class="line">②变量名的第一个字符不能是数字</span><br><span class="line">③系统关键字不能声明为变量名</span><br><span class="line"></span><br><span class="line">变量的赋值：</span><br><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">name = <span class="string">" Jchen "</span></span><br><span class="line">name2 = name</span><br><span class="line">print(<span class="string">"my name is"</span>,name,name2)</span><br><span class="line"></span><br><span class="line">name = <span class="string">" lailiao "</span></span><br><span class="line">print(<span class="string">"my name is"</span>,name,name2)</span><br></pre></td></tr></table></figure>
+<h2 id="用户输入"><a href="#用户输入" class="headerlink" title="用户输入"></a>用户输入</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> getpass     <span class="comment">#密码模块</span></span><br><span class="line">username = input(<span class="string">"username:"</span>)</span><br><span class="line">password = getpass.getpass(<span class="string">"password"</span>)  <span class="comment">#getpass.getpass为将密码加密</span></span><br><span class="line">print(username,password)</span><br></pre></td></tr></table></figure>
+<h2 id="模块初识"><a href="#模块初识" class="headerlink" title="模块初识"></a>模块初识</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line">print(sys.path)    <span class="comment">#打印环境变量列表</span></span><br><span class="line">print(sys.argv)    <span class="comment">#把执行脚本时传递的参数获取到了</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cmd_res = os.system(<span class="string">"dir"</span>)          <span class="comment">#执行命令，不保存结果</span></span><br><span class="line">cmd_res = os.popen(<span class="string">"dir"</span>).read()    <span class="comment">#执行命令并保存，读取</span></span><br><span class="line">print(<span class="string">"--&gt;"</span>,cmd_res)   <span class="comment">#0表示成功</span></span><br><span class="line">os.mkdir(<span class="string">"nem_dir"</span>)   <span class="comment">#创建新目录</span></span><br><span class="line"></span><br><span class="line">python全局环境变量目录，基本一般都放在一个叫 Python/<span class="number">3.5</span>/site-packages 目录下</span><br></pre></td></tr></table></figure>
+<h2 id="数据类型初识"><a href="#数据类型初识" class="headerlink" title="数据类型初识"></a>数据类型初识</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、数字</span><br><span class="line">整型int — —&gt;长整型 long</span><br><span class="line"><span class="keyword">print</span>（type（<span class="number">2</span>））</span><br><span class="line">浮点型float</span><br><span class="line"><span class="keyword">print</span>（type(<span class="number">2.3</span>)）</span><br><span class="line">复数complex（了解）</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、布尔值  bull</span><br><span class="line">真或假 <span class="number">1</span>或<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>、字符串  str</span><br><span class="line"><span class="keyword">print</span>（type（<span class="string">"hello world"</span>））</span><br><span class="line"><span class="comment">#字符串常用功能：移除空白、分割、长度、索引、切片</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#字符串格式化输出</span></span><br><span class="line"><span class="comment">#play1</span></span><br><span class="line">name = input(<span class="string">"name;"</span>)</span><br><span class="line">age = int(input(<span class="string">"age:"</span>))   <span class="comment">#integer 整形</span></span><br><span class="line">job = input(<span class="string">"job:"</span>)</span><br><span class="line">salary = input(<span class="string">"salary:"</span>)</span><br><span class="line"><span class="comment">#格式化输出</span></span><br><span class="line">info = <span class="string">'''</span></span><br><span class="line"><span class="string">--------- info of %s ------------</span></span><br><span class="line"><span class="string">name:%s</span></span><br><span class="line"><span class="string">age:%d</span></span><br><span class="line"><span class="string">job:%s</span></span><br><span class="line"><span class="string">salary:%s</span></span><br><span class="line"><span class="string">-------------------------------------  </span></span><br><span class="line"><span class="string">'''</span>%(name,name,age,job,salary)</span><br><span class="line">print(info)</span><br><span class="line"><span class="comment">#格式化字符串%s为字符串，%d为数字，%f为小数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#play2  利用关键字参数输出</span></span><br><span class="line">info2 = <span class="string">'''</span></span><br><span class="line"><span class="string">--------- info of &#123;_name&#125; ------------</span></span><br><span class="line"><span class="string">name:&#123;_name&#125;</span></span><br><span class="line"><span class="string">age:&#123;_age&#125;</span></span><br><span class="line"><span class="string">job:&#123;_job&#125;</span></span><br><span class="line"><span class="string">salary:&#123;_salary&#125;</span></span><br><span class="line"><span class="string">-------------------------------------  </span></span><br><span class="line"><span class="string">'''</span>.format(_name=name,</span><br><span class="line">		    _age=age,</span><br><span class="line">		    _job=job,</span><br><span class="line">			_salary=salary)</span><br><span class="line">print(info2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#play3  利用位置参数输出</span></span><br><span class="line">info3 = <span class="string">'''</span></span><br><span class="line"><span class="string">--------- info of &#123;0&#125; ------------</span></span><br><span class="line"><span class="string">name:&#123;0&#125;</span></span><br><span class="line"><span class="string">age:&#123;1&#125;</span></span><br><span class="line"><span class="string">job:&#123;2&#125;</span></span><br><span class="line"><span class="string">salary:&#123;3&#125;</span></span><br><span class="line"><span class="string">-------------------------------------  </span></span><br><span class="line"><span class="string">'''</span>.format(name,age,job,salary)</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>、列表 list</span><br><span class="line">创建列表：</span><br><span class="line">name_list = [<span class="string">'alex'</span>, <span class="string">'seven'</span>, <span class="string">'eric'</span>]</span><br><span class="line">name_list ＝ list([<span class="string">'alex'</span>, <span class="string">'seven'</span>, <span class="string">'eric'</span>])</span><br><span class="line">基本操作：索引、切片、追加、删除、长度、切片、循环、包含</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>、元祖 tuple(不可变列表)</span><br><span class="line">创建元祖：</span><br><span class="line">ages = (<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>,<span class="number">44</span>,<span class="number">55</span>)</span><br><span class="line">ages = tuple(<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>,<span class="number">44</span>,<span class="number">55</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>、字典 dict（无序）</span><br><span class="line">创建字典：</span><br><span class="line">person = &#123;<span class="string">"name"</span>: <span class="string">"mr.wu"</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;</span><br><span class="line">person = dict(&#123;<span class="string">"name"</span>: <span class="string">"mr.wu"</span>, <span class="string">'age'</span>: <span class="number">18</span>&#125;)</span><br><span class="line">常用操作：索引、新增、删除、键、值、键值对、循环、长度</span><br></pre></td></tr></table></figure>
+<h2 id="数据运算"><a href="#数据运算" class="headerlink" title="数据运算"></a>数据运算</h2><p>More info: <a href="http://www.runoob.com/python/python-operators.html" target="_blank" rel="noopener">数据运算</a></p>
+<h2 id="if…else表达式"><a href="#if…else表达式" class="headerlink" title="if…else表达式"></a>if…else表达式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#game1 用户登陆验证</span></span><br><span class="line">username = input(<span class="string">"username:"</span>)</span><br><span class="line">password = input(<span class="string">"password:"</span>)</span><br><span class="line"><span class="keyword">if</span> username == <span class="string">"Jchen"</span> <span class="keyword">and</span> password == <span class="string">"cmd"</span>:</span><br><span class="line">	print(<span class="string">"Welcome user &#123;name&#125; login..."</span>.format(name=username))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">"Invalid username or password!"</span>)</span><br><span class="line"><span class="comment">#game2 猜年龄游戏</span></span><br><span class="line">age_of_oldbooy = <span class="number">56</span></span><br><span class="line">guess_age = int(input(<span class="string">"guess age:"</span>))</span><br><span class="line">	<span class="keyword">if</span> guess_age == age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"yes,you got it."</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">elif</span> guess_age &gt; age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"think smaller.."</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"think bigger!"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最简单的循环10次</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>,<span class="number">1</span>):    <span class="comment">#其中1为步长，默认为1</span></span><br><span class="line">	print(<span class="string">"loop "</span>,i)</span><br><span class="line">输出：</span><br><span class="line">loop  <span class="number">0</span></span><br><span class="line">loop  <span class="number">1</span></span><br><span class="line">loop  <span class="number">2</span></span><br><span class="line">loop  <span class="number">3</span></span><br><span class="line">loop  <span class="number">4</span></span><br><span class="line">loop  <span class="number">5</span></span><br><span class="line">loop  <span class="number">6</span></span><br><span class="line">loop  <span class="number">7</span></span><br><span class="line">loop  <span class="number">8</span></span><br><span class="line">loop  <span class="number">9</span></span><br><span class="line"><span class="comment">#需求一：还是上面的程序，但是遇到大于5的循环次数就不走了，直接跳入下一次循环</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">	<span class="keyword">if</span> i &lt;<span class="number">5</span>:</span><br><span class="line">		print(<span class="string">"loop "</span>,i)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="keyword">continue</span>     <span class="comment">#结束本轮循环，开始下一轮循环</span></span><br><span class="line">	print(<span class="string">"hehe..."</span>)</span><br><span class="line"><span class="comment">#需求二：还是上面的程序，但是遇到大于5的循环次数就不走了，直接退出</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">	print(<span class="string">'-------------'</span>,i)</span><br><span class="line">	<span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">		print(j)</span><br><span class="line">		<span class="keyword">if</span> j &gt;<span class="number">5</span>:</span><br><span class="line">		    <span class="keyword">break</span>   <span class="comment">#结束循环</span></span><br></pre></td></tr></table></figure>
+<h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">	print(<span class="string">"count:"</span>,count)</span><br><span class="line">	count = count +<span class="number">1</span> <span class="comment">#count +=1</span></span><br><span class="line">	<span class="keyword">if</span> count == <span class="number">1000</span>:</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line"><span class="comment">#game2 猜年龄游戏进化</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#如何实现让用户不断的猜年龄，但只给最多3次机会，再猜不对就退出程序。</span></span><br><span class="line"><span class="comment">#play1</span></span><br><span class="line">age_of_oldbooy = <span class="number">56</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> count &lt; <span class="number">3</span>:</span><br><span class="line">	guess_age = int(input(<span class="string">"guess age:"</span>))</span><br><span class="line">	<span class="keyword">if</span> guess_age == age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"yes,you got it."</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">elif</span> guess_age &gt; age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"think smaller.."</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"think bigger!"</span>)</span><br><span class="line">	count +=<span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">"你的次数用完了！拜拜。"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#play2</span></span><br><span class="line">age_of_oldbooy = <span class="number">56</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</span><br><span class="line">	guess_age = int(input(<span class="string">"guess age:"</span>))</span><br><span class="line">	<span class="keyword">if</span> guess_age == age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"yes,you got it."</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">elif</span> guess_age &gt; age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"think smaller.."</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"think bigger!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">"你的次数用完了！拜拜。"</span>)</span><br><span class="line">print(<span class="string">"不玩了！"</span>)</span><br><span class="line"></span><br><span class="line">play3</span><br><span class="line">age_of_oldbooy = <span class="number">56</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> count &lt; <span class="number">3</span>:</span><br><span class="line">	guess_age = int(input(<span class="string">"guess age:"</span>))</span><br><span class="line">	<span class="keyword">if</span> guess_age == age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"yes,you got it."</span>)</span><br><span class="line">		print(<span class="string">"game over"</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">elif</span> guess_age &gt; age_of_oldbooy:</span><br><span class="line">		print(<span class="string">"think smaller.."</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"think bigger!"</span>)</span><br><span class="line">	count +=<span class="number">1</span></span><br><span class="line">	<span class="keyword">if</span> count == <span class="number">3</span>:</span><br><span class="line">		continue_confirm = input(<span class="string">"do you want to keep guessing...?\nyes:enter no:n"</span>)</span><br><span class="line">		<span class="keyword">if</span> continue_confirm != <span class="string">'n'</span>:</span><br><span class="line">			count = <span class="number">0</span></span><br><span class="line">		print(<span class="string">"game over"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="homework"><a href="#homework" class="headerlink" title="homework"></a>homework</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编写登陆接口,输入用户名密码,认证成功后显示欢迎信息,输错三次后锁定</span></span><br><span class="line"></span><br><span class="line">user = <span class="string">"jchen"</span></span><br><span class="line">passwd = <span class="string">"123456"</span></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line">l = open(<span class="string">'F:\\untitled\\oldboy\\week1\\list.txt'</span>,<span class="string">'r+'</span>)</span><br><span class="line"><span class="keyword">while</span> i&lt;<span class="number">3</span>:</span><br><span class="line">	username = input(<span class="string">"请输入用户名："</span>)</span><br><span class="line">	password = input(<span class="string">"请输入密码："</span>)</span><br><span class="line">	<span class="keyword">if</span> username == user <span class="keyword">and</span> password == passwd:</span><br><span class="line">		print(<span class="string">"认证成功！欢迎%s登录"</span>%username)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">elif</span> username <span class="keyword">in</span> list(l):</span><br><span class="line">		print(<span class="string">"你的账户已被锁定！"</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		print(<span class="string">"账户名密码错误，请重新输入！"</span>)</span><br><span class="line">	i +=<span class="number">1</span></span><br><span class="line">	<span class="keyword">if</span> i ==<span class="number">3</span>:</span><br><span class="line">		l.write(username)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#多级菜单,三级菜单,可依次选择进入各子菜单</span></span><br><span class="line">data = &#123;</span><br><span class="line">    <span class="string">'北京'</span>:&#123;</span><br><span class="line">        <span class="string">"昌平"</span>:&#123;</span><br><span class="line">            <span class="string">"沙河"</span>:[<span class="string">"oldboy"</span>,<span class="string">"test"</span>],</span><br><span class="line">            <span class="string">"天通苑"</span>:[<span class="string">"链家地产"</span>,<span class="string">"我爱我家"</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"朝阳"</span>:&#123;</span><br><span class="line">            <span class="string">"望京"</span>:[<span class="string">"奔驰"</span>,<span class="string">"陌陌"</span>],</span><br><span class="line">            <span class="string">"国贸"</span>:&#123;<span class="string">"CICC"</span>,<span class="string">"HP"</span>&#125;,</span><br><span class="line">            <span class="string">"东直门"</span>:&#123;<span class="string">"Advent"</span>,<span class="string">"飞信"</span>&#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"海淀"</span>:&#123;&#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">'山东'</span>:&#123;</span><br><span class="line">        <span class="string">"德州"</span>:&#123;&#125;,</span><br><span class="line">        <span class="string">"青岛"</span>:&#123;&#125;,</span><br><span class="line">        <span class="string">"济南"</span>:&#123;&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">'广东'</span>:&#123;</span><br><span class="line">        <span class="string">"东莞"</span>:&#123;&#125;,</span><br><span class="line">        <span class="string">"常熟"</span>:&#123;&#125;,</span><br><span class="line">        <span class="string">"佛山"</span>:&#123;&#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">exit_flag = <span class="keyword">False</span></span><br><span class="line"><span class="keyword">while</span> <span class="keyword">not</span> exit_flag:</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> data:</span><br><span class="line">		print(i)</span><br><span class="line">	choice1 = input(<span class="string">"请输入你的选择1："</span>)</span><br><span class="line">	<span class="keyword">if</span> choice1 == <span class="string">'q'</span>:</span><br><span class="line">		exit_flag = <span class="keyword">True</span></span><br><span class="line">	<span class="keyword">elif</span> choice1 <span class="keyword">in</span> data:</span><br><span class="line">		<span class="keyword">while</span> <span class="keyword">not</span> exit_flag:</span><br><span class="line">			<span class="keyword">for</span> j <span class="keyword">in</span> data[choice1]:</span><br><span class="line">				print(<span class="string">'\t'</span>,j)</span><br><span class="line">			choice2 = input(<span class="string">"请输入你的选择2："</span>)</span><br><span class="line">			<span class="keyword">if</span> choice2 <span class="keyword">in</span> data[choice1]:</span><br><span class="line">				<span class="keyword">while</span> <span class="keyword">not</span> exit_flag:</span><br><span class="line">					<span class="keyword">for</span> k <span class="keyword">in</span> data[choice1][choice2]:</span><br><span class="line">						print(<span class="string">'\t\t'</span>,k)</span><br><span class="line">					choice3 = input(<span class="string">"请输入你的选择3："</span>)</span><br><span class="line">					<span class="keyword">if</span> choice3 <span class="keyword">in</span> data[choice1][choice2]:</span><br><span class="line">						<span class="keyword">for</span> m <span class="keyword">in</span> data[choice1][choice2][choice3]:</span><br><span class="line">							print(<span class="string">'\t\t\t'</span>,m)</span><br><span class="line">						choice4 = input(<span class="string">"最后一层，按b返回，按q退出！"</span>)</span><br><span class="line">						<span class="keyword">if</span> choice4 == <span class="string">'b'</span>:</span><br><span class="line">							<span class="keyword">pass</span></span><br><span class="line">						<span class="keyword">elif</span> choice4 == <span class="string">'q'</span>:</span><br><span class="line">							exit_flag = <span class="keyword">True</span></span><br><span class="line">					<span class="keyword">elif</span> choice3 == <span class="string">'b'</span>:</span><br><span class="line">						<span class="keyword">break</span></span><br><span class="line">					<span class="keyword">elif</span> choice3 == <span class="string">'q'</span>:</span><br><span class="line">						exit_flag = <span class="keyword">True</span></span><br><span class="line">			<span class="keyword">elif</span> choice2 ==<span class="string">'b'</span>:</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">			<span class="keyword">elif</span> choice2 == <span class="string">'q'</span>:</span><br><span class="line">				exit_flag = <span class="keyword">True</span></span><br></pre></td></tr></table></figure>
+<h2 id="知识补充"><a href="#知识补充" class="headerlink" title="知识补充"></a>知识补充</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#bytes类型</span></span><br><span class="line"></span><br><span class="line">msg = <span class="string">'我爱北京天安门'</span></span><br><span class="line">print(msg)</span><br><span class="line">print(msg.encode(encoding=<span class="string">"utf-8"</span>))  <span class="comment">#二进制转换,默认为utf-8,  编码</span></span><br><span class="line">print(type(msg.encode(encoding=<span class="string">"utf-8"</span>)))  <span class="comment">#bytes为二进制类型   转码</span></span><br><span class="line">print(msg.encode(encoding=<span class="string">"utf-8"</span>).decode(encoding=<span class="string">"utf-8"</span>))   <span class="comment">#二进制转文本</span></span><br><span class="line">print(type(msg.encode(encoding=<span class="string">"utf-8"</span>).decode(encoding=<span class="string">"utf-8"</span>)))  <span class="comment">#字符串类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#三元运算</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line">c = <span class="number">5</span></span><br><span class="line">result = a <span class="keyword">if</span> a &gt; c <span class="keyword">else</span> b</span><br><span class="line"><span class="comment">#如果if条件为真：result = a  else result = b</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#进制</span></span><br><span class="line">二进制:<span class="number">01</span></span><br><span class="line">八进制:<span class="number">01234567</span></span><br><span class="line">十进制:<span class="number">0123456789</span></span><br><span class="line">十六进制:<span class="number">0123456789</span>ABCDEF  </span><br><span class="line">二进制到16进制转换:http://jingyan.baidu.com/album/47a29f24292608c0142399cb.html?picindex=1</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+	  <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+	  </div>
+	  
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+            <a href="/tags/oldboy/" rel="tag"><i class="fa fa-tag"></i> oldboy</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/10/爬取淘宝信息/" rel="next" title="爬取淘宝信息">
+                <i class="fa fa-chevron-left"></i> 爬取淘宝信息
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/13/selenium-test/" rel="prev" title="web自动化测试">
+                web自动化测试 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/picture.jpg"
+                alt="嫽陈" />
+            
+              <p class="site-author-name" itemprop="name">嫽陈</p>
+              <p class="site-description motion-element" itemprop="description">前世千万次的回眸，换的今生的擦肩而过；</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml /注意：有一个空格" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/lchenzhe" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="1392734870@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/chinalife/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://junjiang.xyz/" target="_blank" title="和尚的博客">
+                      
+                        <i class="fa fa-fw fa-globe"></i>和尚的博客</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.runoob.com/python/python-tutorial.html" title="python" target="_blank">python</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://fishc.com.cn/" title="鱼C工作室" target="_blank">鱼C工作室</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.cnblogs.com/alex3714/" title="金角大王" target="_blank">金角大王</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python安装"><span class="nav-number">1.</span> <span class="nav-text">Python安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#windows"><span class="nav-number">1.1.</span> <span class="nav-text">windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-Mac"><span class="nav-number">1.2.</span> <span class="nav-text">Linux/Mac</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-world程序"><span class="nav-number">2.</span> <span class="nav-text">Hello world程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">3.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户输入"><span class="nav-number">4.</span> <span class="nav-text">用户输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块初识"><span class="nav-number">5.</span> <span class="nav-text">模块初识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型初识"><span class="nav-number">6.</span> <span class="nav-text">数据类型初识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据运算"><span class="nav-number">7.</span> <span class="nav-text">数据运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if…else表达式"><span class="nav-number">8.</span> <span class="nav-text">if…else表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for循环"><span class="nav-number">9.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while循环"><span class="nav-number">10.</span> <span class="nav-text">while循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#homework"><span class="nav-number">11.</span> <span class="nav-text">homework</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识补充"><span class="nav-number">12.</span> <span class="nav-text">知识补充</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">嫽陈</span>
+
+<!--
+  
+ -->
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共3.3k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>
